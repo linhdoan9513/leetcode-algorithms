@@ -20,3 +20,13 @@ var sumZero = function (n) {
   }
   return output;
 };
+
+//cleanup Code:
+var sumZero = function (n) {
+  let output = [];
+  for (var i = 1; i < n; i++) {
+    output.push(i);
+  }
+  output.push((n * (1 - n)) / 2);
+  return output;
+};
