@@ -3,7 +3,7 @@
 var sumZero = function (n) {
   let output = [];
   let currentSum = 0;
-
+  let outputSum = 0;
   if (n <= 1) {
     output.push(0);
   } else {
@@ -12,9 +12,9 @@ var sumZero = function (n) {
       if (i < lastNum) {
         currentSum++;
         output.push(currentSum);
+        outputSum += output[output.length - 1];
       } else {
-        currentSum = output.reduce((partialSum, a) => partialSum + a, 0);
-        output.push(0 - currentSum);
+        output.push(0 - outputSum);
       }
     }
   }
