@@ -16,3 +16,6 @@ var maxProduct = function (nums) {
   output = (second - 1) * (largest - 1);
   return output;
 };
+
+//O(n) because for we have to loop throuh every number in the nums array once, therefore the number of operations are equal to the number of num in the array
+//O(1) space complexity
