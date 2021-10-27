@@ -27,3 +27,5 @@ var highFive = function (items) {
 
   return results;
 };
+
+//Time complexity: close to O(n)
